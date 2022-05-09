@@ -12,7 +12,7 @@ from rest_framework.parsers import JSONParser
 from .models import Customer 
 from .serializer import CustomerSerializers 
 
-import pickle
+import pickle, joblib
 import json 
 import numpy as np 
 from sklearn import preprocessing 
@@ -26,8 +26,8 @@ class CustomerView(viewsets.ModelViewSet):
 
 def status(df):
     try:
-        scaler=pickle.load(open("./DeployML/DjangoAPI/scaler.pickle", 'rb'))
-        model=pickle.load(open("./DeployML/DjangoAPI/scaler.pickle", 'rb'))
+        scaler=joblib.load("/home/maa/Documents/GitHub/works/modele-deploiement/exo-2/DeployML/DjangoAPI/scaler.pickle")
+        model=joblib.load("/home/maa/Documents/GitHub/works/modele-deploiement/exo-2/DeployML/DjangoAPI/classifier.pickle")
         X = scaler.transform(df) 
         y_pred = model.predict(X) 
         y_pred=(y_pred>0.80) 
