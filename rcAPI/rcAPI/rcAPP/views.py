@@ -23,7 +23,7 @@ class ApprovalsView(viewsets.ModelViewSet):
 
 def approvereject(request):
     try:
-        path_to_artifacts = "/home/maa/Documents/GitHub/works/rcAPI/pickle/"
+        path_to_artifacts = "/home/maa/Documents/GitHub/works/rcAPI/rcAPI/pickle/"
         features_columns =  joblib.load(path_to_artifacts+"features_columns.pickle")
         encoders = joblib.load(path_to_artifacts+"encoder_cat_col.pickle")
         model = joblib.load(path_to_artifacts+"model.pickle")
