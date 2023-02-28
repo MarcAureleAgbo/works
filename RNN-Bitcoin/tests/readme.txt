@@ -1,0 +1,3 @@
+Pour exécuter les tests créés avec pytest, vous pouvez simplement exécuter la commande pytest dans le terminal depuis la racine du projet. Cette commande va rechercher tous les fichiers de test dans le projet (les fichiers dont les noms commencent par test_) et les exécuter. Les résultats des tests seront affichés dans le terminal, avec des informations sur les tests réussis et échoués.
+
+Il est également possible d'exécuter des tests spécifiques à l'aide de la commande pytest et en spécifiant le chemin du fichier de test que vous souhaitez exécuter. Par exemple, pour exécuter uniquement les tests du fichier test_preprocess.py, vous pouvez exécuter la commande pytest tests/test_preprocess.py.
