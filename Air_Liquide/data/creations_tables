@@ -1,0 +1,18 @@
+CREATE TABLE raw_data (
+  Date DATE,
+  Low DOUBLE PRECISION
+);
+--ALTER TABLE raw_data ALTER COLUMN low SET DEFAULT 0.0;
+
+select * from raw_data;
+--
+CREATE TABLE predictions (
+  Date DATE,
+  valeur DOUBLE PRECISION
+);
+
+COPY raw_data(date, low) FROM '/home/maa/Téléchargements/airliquide.csv' DELIMITER ',' CSV HEADER;
+
+--drop table raw_data; drop table predictions;
+
+select * from raw_data limit 500

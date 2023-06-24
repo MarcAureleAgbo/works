@@ -1,0 +1,10 @@
+- écrire la fonction qui permet de mettre à jour le fichier.
+
+penser à 3 parties:
+
+- collecte automatique des données et stockage en base de données
+- entrainement renouvelé tous les 30 jours et changement de modèle lorsque l'indicateur de performance dit que le nouveau est meilleur (snger à F2)
+- stockage des valeurs prédites et des valeurs réelles en base de données
+
+traquer les dates qui manquent dans la série
+

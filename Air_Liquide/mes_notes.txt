@@ -1,0 +1,6 @@
+
+Ordre dans lequel je parcours les fichiers:
+
+exploration_de_donnees.ipynb
+
+preprocessing.py

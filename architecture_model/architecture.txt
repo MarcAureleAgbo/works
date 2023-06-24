@@ -1,0 +1,110 @@
+
+
+|- data/
+|  |- raw/
+|  |  |- air_liquide_raw.csv
+|  |
+|  |- processed/
+|  |  |- air_liquide_processed.csv
+|  |
+|  |- interim/
+|  |
+|  |- external/
+|  |  |- stock_prices.csv
+|  
+|- notebooks/
+|  |- exploratory/
+|  |  |- exploratory_data_analysis.ipynb
+|  |
+|  |- pre-processing/
+|  |  |- data_preparation.ipynb
+|  |
+|  |- modeling/
+|  |  |- rnn_modeling.ipynb
+|  |
+|  |- evaluation/
+|  |  |- model_evaluation.ipynb
+|  |
+|  |- deployment/
+|  |  |- model_deployment.ipynb
+|  
+|- src/
+|  |- data/
+|  |  |- load_data.py
+|  |  |- clean_data.py
+|  |  |- prepare_data.py
+|  |
+|  |- models/
+|  |  |- rnn_model.py
+|  |
+|  |- utils/
+|  |  |- plotting.py
+|  |
+|  |- visualization/
+|  |  |- visualize_data.ipynb
+|  
+|- tests/
+|  |- test_load_data.py
+|  |- test_clean_data.py
+|  |- test_rnn_model.py
+|  
+|- reports/
+|  |- figures/
+|  |  |- rnn_loss.png
+|  |
+|  |- results/
+|  |  |- model_performance_metrics.csv
+|  
+|- requirements.txt
+|- README.md
+
+
+
+Explications des différents fichiers :
+
+data/raw/air_liquide_raw.csv : fichier de données brutes pour AIR LIQUIDE.
+
+data/processed/air_liquide_processed.csv : fichier de données nettoyées, transformées et préparées pour l'analyse.
+
+data/external/stock_prices.csv : fichier de données externes utilisé dans le projet.
+
+notebooks/exploratory/exploratory_data_analysis.ipynb : notebook pour l'exploration des données.
+
+notebooks/pre-processing/data_preparation.ipynb : notebook pour nettoyer et préparer les données.
+
+notebooks/modeling/rnn_modeling.ipynb : notebook pour construire et entraîner le modèle RNN.
+
+notebooks/evaluation/model_evaluation.ipynb : notebook pour évaluer les performances du modèle.
+
+notebooks/deployment/model_deployment.ipynb : notebook pour déployer le modèle.
+
+src/data/load_data.py : script pour charger les données.
+
+src/data/clean_data.py : script pour nettoyer les données.
+
+src/data/prepare_data.py : script pour préparer les données pour le modèle.
+
+src/models/rnn_model.py : script pour construire le modèle RNN.
+
+src/utils/plotting.py : script utilitaire pour créer des visualisations.
+
+tests/test_load_data.py : fichier de test pour la fonction de chargement des données.
+
+tests/test_clean_data.py : fichier de test pour la fonction de nettoyage des données.
+
+tests/test_rnn_model.py : fichier de test pour le modèle RNN.
+
+reports/figures/rnn_loss.png : figure de la perte du modèle RNN.
+
+reports/results/model_performance_metrics.csv : fichier contenant les performances du modèle.
+
+requirements.txt : fichier contenant toutes les dé
+
+
+
+commande pour éviter les erreurs d'importation (ajouter le dossier en var d'environnement) (executer dans la racine du projet):
+export PYTHONPATH=${PYTHONPATH}:$(pwd)  (les chemins sont séparés par des : dans la var d'env. on peut en ajouter autant qu'on veut)
+
+Exécution:
+
+
