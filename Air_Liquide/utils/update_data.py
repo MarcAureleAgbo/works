@@ -44,13 +44,13 @@ def update_data(date):
         print("Données ajoutées avec succès.")
 
     # Valider la transaction
-    conn.commit()
+        conn.commit()
 
     return "raw_data updated to " + str(date)
 
 def update_pred(nouvelle_date,pred):
     # Vérifier si le jour existe déjà dans la table
-    cur.execute("SELECT date FROM ma_table WHERE date = %s", (nouvelle_date,))
+    cur.execute("SELECT date FROM predictions WHERE date = %s", (nouvelle_date,))
     existing_date = cur.fetchone()
 
     if existing_date:
@@ -61,7 +61,7 @@ def update_pred(nouvelle_date,pred):
         cur.execute("INSERT INTO predictions(date, valeur) VALUES (%s, %s)", (nouvelle_date, pred))
         print("Données ajoutées avec succès.")
     # Valider la transaction
-    conn.commit()
+        conn.commit()
     return "predictions updated to "+str(nouvelle_date)
 
 
@@ -85,7 +85,8 @@ if __name__ == "__main__":
     
     
     # Mise à jour des données de la base
-    update_data()
+#    for d in liste_dates:
+#        update_data(date=d)
     # maj des valeurs prédites
     # update_pred()
 
