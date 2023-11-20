@@ -6,7 +6,6 @@ from nltk.stem import WordNetLemmatizer
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 path = '/home/maa/Documents/GitHub/works/classification_tweets/data/'
-filename = path+'train_tweet_mille.csv'
 
 # Télécharger les stopwords de NLTK
 nltk.download('stopwords')
