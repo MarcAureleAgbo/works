@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analyse de Sentiments Twitter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Analyse de Sentiments Twitter</h1>
+    <form method="post">
+        <input type="text" name="tweet" placeholder="Entrez un tweet ici" required>
+        <button type="submit">Analyser</button>
+    </form>
+    {% if prediction %}
+        <h2>Résultat: {{ prediction }}</h2>
+    {% endif %}
+</body>
+</html>

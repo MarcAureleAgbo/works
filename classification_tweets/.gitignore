@@ -1,0 +1,58 @@
+# Fichier .gitignore
+
+# Exclure le dossier data
+data/
+
+# Exclure les fichiers de données spécifiques (si nécessaire)
+# data/mon_fichier_de_donnees.csv
+
+# Autres fichiers et dossiers couramment ignorés en Python
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches de test
+.cache
+.pytest_cache/
+
+# Fichiers de package
+*.egg-info/
+*.egg
+dist/
+
+# Fichiers de build
+build/
+develop-eggs/
+downloads/
+eggs/
+parts/
+sdist/
+var/
+wheels/
+
+# Fichiers de configuration de l'environnement Python
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Fichiers de base de données SQLite
+*.sqlite
+
+# Fichiers de journalisation
+*.log
+
+# Fichiers de configuration de l'IDE
+# Commentez les lignes suivantes si vous souhaitez inclure vos configurations d'IDE dans le dépôt
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dossiers OS générés
+.DS_Store
+Thumbs.db
